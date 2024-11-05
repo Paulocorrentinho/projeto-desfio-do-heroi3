@@ -1,7 +1,5 @@
 const entradaDeDados = require("prompt-sync")()
 
-let tipoHeroi
-
 class MeuHeroi {
     constructor(nome, idade, tipo) { 
         this.nome = nome
@@ -30,6 +28,7 @@ function criarHeroi() {
     let nome = entradaDeDados("Digite o nome do Herói: ")
     let idade = parseInt(entradaDeDados("Digite a idade do Herói: "))
     let digitoVerificador
+    let tipoHeroi
 
     do {
         console.log("Opções de Herois")
